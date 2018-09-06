@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type='text/css'>
+#footer{
+	position:absolute;
+	width:100%;bottom:0;
+	padding:0px;
+}
+
+.label {
+	
+    color: white;
+    padding: 8px;
+
+	width:300px;
+	display:inline-block;
+	
+	background-size: 100% 100%;
+background-repeat: no-repeat;
+height:50px;
+}
+
+.success {background-image:url('banner11.png'); background-color: #4CAF50;} /* Green */
+.info {background-image:url('banner12.png'); background-color: #2196F3;} /* Blue */
+.warning {background-image:url('banner13.png'); background-color: #ff9800;} /* Orange */
+.danger {background-image:url('banner14.png'); height:100px; background-color: #f44336;} /* Red */ 
+.other {background-image:url('banner14.png');background-color: #e7e7e7; color: black;} /* Gray */
+</style>
+        <title>Blank App</title>
+    </head>
+    <body>
+    <div data-role="page" id ="page1">
+ 
+
+    <div data-role="header">
+        <h1>This is header</h1>
+    </div>
+
+    <div data-role="main" class="ui-content"> 
+   
+    <div class="custom-label">
+    <span class="label success">Success</span><br>
+<span class="label info">Info</span><br>
+<span class="label warning">Warning</span><br>
+<span class="label danger">Danger</span><br>
+   	
+    <div >
+    <div data-role="navbar" >
+     <ul>
+                    <li><a href="#" data-role="tab"  data-theme="a" data-icon="grid" data-co  style="colo:#FC0;">History</a></li>
+                    <li><a href="#" data-role="tab"  data-theme="c" data-icon="star">B</a></li>
+                    <li><a href="#" data-role="tab" data-icon="gear">C</a></li>
+                    <li><a href="#" data-role="tab"  data-icon="arrow-l">D</a></li>
+       			</ul>
+                
+               </div>
+               </div>
+    </div>
+    </div>
+  
+ <!--  <div data-role="footer" id="footer">-->
+  		<!--<div data-role="tabs" id="tabs">-->
+       
+          <div data-role="navbar" id="footer" style="padding-bottom:0px" >
+                <ul>
+                    <li><a href="#" data-role="tab" data-icon="grid">A</a></li>
+                    <li><a href="#" data-role="tab" data-icon="star">B</a></li>
+                    <li><a href="#" data-role="tab" data-icon="gear">C</a></li>
+                    <li><a href="#" data-role="tab"  data-icon="arrow-l">D</a></li>
+       			</ul>
+           </div><!-- /navbar -->
+		<!--</div>-->
+        
+	<!--</div><!--footer-->
+     </div><!--page-->
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
